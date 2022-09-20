@@ -1,0 +1,106 @@
+@use "colors" as c;
+
+header.container {
+  padding: 20px;
+  display: flex;
+  gap: 32px;
+  background-color: c.$gray-0;
+  border-radius: 12px;
+
+  // profile photo
+  > div:first-child {
+    width: 26.82%;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  // info
+  > div:last-child {
+    // name/specialty & contact
+    > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 36px;
+
+      // name/specialty
+      > div:first-child {
+        h1 {
+          font: 600 24px/32px "Montserrat", sans-serif;
+          color: c.$gray-5;
+        }
+        h2 {
+          font: 500 16px/24px "Montserrat", sans-serif;
+          color: c.$gray-4;
+        }
+      }
+
+      // contact
+      > div:last-child {
+        div {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          span {
+            color: c.$gray-5;
+          }
+
+          a {
+            font: 500 16px/24px "Montserrat", sans-serif;
+            color: c.$gray-4;
+          }
+        }
+      }
+    }
+
+    // text about
+    > div:nth-child(2) {
+      display: grid;
+      gap: 16px;
+
+      p {
+        font: 500 16px/24px "Montserrat", sans-serif;
+        color: c.$gray-4;
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 619.98px) {
+  header.container {
+    gap: 16px;
+    position: relative;
+
+    // profile photo
+    > div:first-child {
+      position: absolute;
+      width: 80px;
+      right: 20px;
+    }
+
+    // info
+    > div:last-child {
+      // name/specialty & contact
+      > div:nth-child(1) {
+        flex-direction: column;
+        margin-bottom: 24px;
+        gap: 16px;
+
+        // contact
+        > div:last-child {
+          div {
+            gap: 8px;
+
+            a {
+              font: 500 12px/20px "Montserrat", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
