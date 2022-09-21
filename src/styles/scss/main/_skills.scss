@@ -1,0 +1,36 @@
+@use "../colors" as c;
+
+main.container {
+  div.skills {
+    padding: 20px;
+    max-width: 400px;
+    background-color: c.$gray-0;
+    border-radius: 12px;
+
+    h3 {
+      font: 700 18px/22px "Montserrat", sans-serif;
+      text-transform: uppercase;
+      color: c.$gray-5;
+      margin-bottom: 16px;
+    }
+
+    &__progress {
+      display: grid;
+      gap: 8px;
+
+      div {
+        display: grid;
+        grid-template-columns: 35% auto;
+
+        label {
+          font: 500 16px/16px "Montserrat", sans-serif;
+          color: c.$gray-5;
+        }
+
+        progress {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
