@@ -1,7 +1,7 @@
 @use "../colors" as c;
 
 main.container {
-  div.skills {
+  section.skills {
     padding: 20px;
     width: 100%;
     background-color: c.$gray-0;
@@ -14,7 +14,7 @@ main.container {
       margin-bottom: 16px;
     }
 
-    &__progress {
+    .skills__progress {
       display: grid;
       gap: 8px;
 
@@ -37,10 +37,10 @@ main.container {
 
 @media screen and (max-width: 619.98px) {
   main.container {
-    div.skills {
+    section.skills {
       padding: 10px;
 
-      &__progress {
+      .skills__progress {
         div {
           grid-template-columns: 32% auto;
         }
