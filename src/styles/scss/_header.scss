@@ -29,11 +29,11 @@ header.container {
       // name/specialty
       > div:first-child {
         h1 {
-          font: 600 24px/32px "Montserrat", sans-serif;
+          font: 600 1.5rem/2rem "Montserrat", sans-serif;
           color: c.$gray-5;
         }
         h2 {
-          font: 500 16px/24px "Montserrat", sans-serif;
+          font: 500 1rem/1.5rem "Montserrat", sans-serif;
           color: c.$gray-4;
         }
       }
@@ -50,7 +50,7 @@ header.container {
           }
 
           a {
-            font: 500 16px/24px "Montserrat", sans-serif;
+            font: 500 1rem/1.5rem "Montserrat", sans-serif;
             color: c.$gray-4;
           }
         }
@@ -63,7 +63,7 @@ header.container {
       gap: 16px;
 
       p {
-        font: 500 16px/24px "Montserrat", sans-serif;
+        font: 500 1rem/1.5rem "Montserrat", sans-serif;
         color: c.$gray-4;
       }
     }
@@ -98,7 +98,7 @@ header.container {
             gap: 8px;
 
             a {
-              font: 500 12px/20px "Montserrat", sans-serif;
+              font: 500 0.75rem/1.25rem "Montserrat", sans-serif;
             }
           }
         }

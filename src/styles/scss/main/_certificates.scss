@@ -1,0 +1,67 @@
+@use "../colors" as c;
+
+main.container {
+  section.certificates {
+    padding: 20px;
+    width: 100%;
+    background-color: c.$gray-0;
+    border-radius: 12px;
+    margin-bottom: 24px;
+
+    h3 {
+      font: 500 1.5rem/1.75rem "Montserrat", sans-serif;
+      color: c.$gray-5;
+      margin-bottom: 24px;
+    }
+
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+
+      div {
+        img {
+          max-width: 100%;
+          border-radius: 12px;
+          margin-bottom: 16px;
+        }
+
+        h4 {
+          font: 600 1rem/1rem "Montserrat", sans-serif;
+          color: c.$gray-6;
+          margin-bottom: 8px;
+        }
+
+        h5 {
+          font: 500 0.75rem/0.75rem "Montserrat", sans-serif;
+          color: c.$gray-4;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 619.98px) {
+  main.container {
+    section.certificates {
+      padding: 10px;
+
+      > div {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+
+        div {
+          img {
+            margin-bottom: 8px;
+          }
+        }
+
+        div:not(:nth-child(3)) {
+          h5 {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
