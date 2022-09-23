@@ -1,0 +1,101 @@
+@use "../colors" as c;
+
+main {
+  .projects {
+    &__filter {
+      padding: 20px;
+      background-color: c.$gray-0;
+      border-radius: 12px;
+      margin-bottom: 16px;
+
+      h3 {
+        font: 500 18px/22px "Montserrat", sans-serif;
+        color: c.$gray-5;
+        margin-bottom: 16px;
+      }
+
+      div {
+        button {
+          font: 500 14px/16px "Montserrat", sans-serif;
+          background-color: c.$gray-0;
+          color: c.$gray-5;
+          padding: 8px 16px;
+          border-radius: 12px;
+          border: 1px solid c.$gray-5;
+          transition: 0.4s;
+          cursor: pointer;
+
+          &:hover {
+            color: c.$gray-0;
+            background-color: c.$blue;
+            border-color: c.$blue;
+          }
+        }
+      }
+    }
+
+    &__list {
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+
+      &-item {
+        padding: 20px;
+        background-color: c.$gray-0;
+        border-radius: 12px;
+
+        img {
+          max-width: 100%;
+          border: 1px solid c.$gray-3;
+          border-radius: 12px;
+          margin-bottom: 12px;
+        }
+
+        div:nth-child(2) {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 12px;
+
+          span {
+            font: 500 1rem/1.25rem "Montserrat", sans-serif;
+            color: c.$gray-5;
+          }
+        }
+
+        h4 {
+          font: 500 1.5rem/2rem "Montserrat", sans-serif;
+          color: c.$gray-6;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font: 500 1rem/1.5rem "Montserrat", sans-serif;
+          color: c.$gray-4;
+          margin-bottom: 24px;
+        }
+
+        div:nth-child(5) {
+          display: flex;
+          gap: 8px;
+
+          a {
+            font: 500 1rem/1.5rem "Montserrat", sans-serif;
+            background-color: c.$gray-0;
+            color: c.$blue;
+            border: 1px solid c.$blue;
+            border-radius: 12px;
+            padding: 12px 36px;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+              background-color: c.$blue;
+              color: c.$gray-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
