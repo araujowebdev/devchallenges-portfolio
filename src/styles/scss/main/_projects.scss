@@ -20,6 +20,12 @@ main {
         gap: 8px;
         flex-wrap: wrap;
 
+        .btn-clicked {
+          background-color: c.$blue;
+          color: c.$gray-0;
+          border: 1px solid c.$gray-0;
+        }
+
         button {
           font: 500 14px/16px "Montserrat", sans-serif;
           background-color: c.$gray-0;
@@ -44,11 +50,13 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 16px;
+      min-height: 496.13px;
 
       &-item {
         padding: 20px;
         background-color: c.$gray-0;
         border-radius: 12px;
+        transition: 1s;
 
         img {
           max-width: 100%;
