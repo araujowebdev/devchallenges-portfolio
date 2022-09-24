@@ -15,6 +15,11 @@ main {
       }
 
       div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+
         button {
           font: 500 14px/16px "Montserrat", sans-serif;
           background-color: c.$gray-0;
@@ -95,6 +100,28 @@ main {
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 899.98px) {
+  main {
+    .projects {
+      &__list {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 619.98px) {
+  main {
+    .projects {
+      &__list {
+        grid-template-columns: 1fr;
+        gap: 12px;
       }
     }
   }
