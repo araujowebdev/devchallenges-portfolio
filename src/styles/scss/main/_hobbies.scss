@@ -1,7 +1,7 @@
 @use "../colors" as c;
 
 main.container {
-  section.certificates {
+  section.hobbies {
     padding: 20px;
     width: 100%;
     background-color: c.$gray-0;
@@ -17,7 +17,7 @@ main.container {
     > div {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 16px;
+      gap: 16px;
 
       div {
         img {
@@ -43,7 +43,7 @@ main.container {
 
 @media screen and (max-width: 619.98px) {
   main.container {
-    section.certificates {
+    section.hobbies {
       padding: 10px;
 
       > div {

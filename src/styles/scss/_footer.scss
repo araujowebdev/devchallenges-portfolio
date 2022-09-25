@@ -1,0 +1,24 @@
+@use "colors" as c;
+
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 67px;
+
+  span {
+    font: 500 1rem/1rem "Montserrat", sans-serif;
+    color: c.$gray-4;
+
+    a {
+      color: c.$gray-4;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
