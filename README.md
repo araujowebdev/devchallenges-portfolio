@@ -14,7 +14,7 @@ Este projeto foi desenvolvido como um desafio proposto pelo site [devChallenges]
 | 🚀 URL Front-end | [**Acesse o site**](https://araujowebdev.github.io/Portfolio---devChallenges/) ou veja como rodar localmente no item [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [devChallenges - Portfolio](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) |
 
-![](https://raw.githubusercontent.com/araujowebdev/Portfolio---devChallenges/main/dist/assets/imgs/page-view-my-gallery.jpg)
+![](https://raw.githubusercontent.com/araujowebdev/Portfolio---devChallenges/main/dist/assets/imgs/page-view-portfolio.jpg)
 
 ## Detalhes do projeto
 
